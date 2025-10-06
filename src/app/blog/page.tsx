@@ -130,7 +130,7 @@ export default function BlogPage() {
             ))
           ) : (
             <p className="text-center text-gray-500 col-span-3">
-              Nema rezultata za "{searchTerm}".
+              Nema rezultata za &quot;{searchTerm}&quot;.
             </p>
           )}
         </div>

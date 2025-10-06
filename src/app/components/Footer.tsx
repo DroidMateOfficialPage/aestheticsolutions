@@ -3,6 +3,7 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -28,10 +29,10 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-3">Navigacija</h3>
           <ul className="space-y-2 text-sm text-gray-200">
-            <li><a href="/" className="hover:text-white transition">Početna</a></li>
-            <li><a href="/usluge" className="hover:text-white transition">Usluge</a></li>
-            <li><a href="/shop" className="hover:text-white transition">Shop</a></li>
-            <li><a href="/onama" className="hover:text-white transition">O nama</a></li>
+            <li><Link href="/" className="hover:text-white transition">Početna</Link></li>
+            <li><Link href="/usluge" className="hover:text-white transition">Usluge</Link></li>
+            <li><Link href="/shop" className="hover:text-white transition">Shop</Link></li>
+            <li><Link href="/onama" className="hover:text-white transition">O nama</Link></li>
           </ul>
         </div>
 
@@ -39,9 +40,9 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-3">Informacije</h3>
           <ul className="space-y-2 text-sm text-gray-200">
-            <li><a href="#" className="hover:text-white transition">Impressum</a></li>
-            <li><a href="/" className="hover:text-white transition">Uslovi korištenja</a></li>
-            <li><a href="#" className="hover:text-white transition">Sitemap</a></li>
+            <li><Link href="#" className="hover:text-white transition">Impressum</Link></li>
+            <li><Link href="/" className="hover:text-white transition">Uslovi korištenja</Link></li>
+            <li><Link href="#" className="hover:text-white transition">Sitemap</Link></li>
           </ul>
         </div>
 
@@ -49,18 +50,18 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-3">Prati nas</h3>
           <div className="flex gap-4 justify-center md:justify-start">
-            <a href="https://www.facebook.com/DroidMateOfficial/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+            <Link href="https://www.facebook.com/DroidMateOfficial/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
               <FaFacebookF size={18} />
-            </a>
-            <a href="https://www.instagram.com/droidmateofficial/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+            </Link>
+            <Link href="https://www.instagram.com/droidmateofficial/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
               <FaInstagram size={18} />
-            </a>
-            <a href="https://www.linkedin.com/company/droidmate/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+            </Link>
+            <Link href="https://www.linkedin.com/company/droidmate/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
               <FaLinkedinIn size={18} />
-            </a>
-            <a href="https://www.tiktok.com/@droidmateofficial?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+            </Link>
+            <Link href="https://www.tiktok.com/@droidmateofficial?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
               <FaTiktok size={18} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -72,14 +73,14 @@ const Footer = () => {
         </p>
         <p className="mt-1">
           Napravio{" "}
-          <a
+          <Link
             href="https://droidmate.dev/"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-white transition"
           >
             DroidMate
-          </a>
+          </Link>
         </p>
       </div>
     </footer>
