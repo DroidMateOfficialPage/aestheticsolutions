@@ -56,7 +56,7 @@ const References: React.FC = () => {
             >
               {/* Komentar */}
               <p className="text-gray-800 text-base md:text-lg leading-relaxed font-light">
-                "{review.comment}"
+                &quot;{review.comment}&quot;
               </p>
 
               {/* Info o klijentu */}
