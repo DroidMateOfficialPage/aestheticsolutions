@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false); // desktop
@@ -23,7 +24,7 @@ const Header: React.FC = () => {
 
       {/* Desktop navigacija */}
       <nav className="hidden lg:flex items-center gap-x-8 relative bg-white/70 backdrop-blur-xl rounded-[30px] px-6 py-3">
-        <a className="text-black text-[16px] font-medium hover:text-accent" href="/">Početna</a>
+        <Link className="text-black text-[16px] font-medium hover:text-accent" href="/">Početna</Link>
 
         <div
           className="relative"
@@ -53,47 +54,47 @@ const Header: React.FC = () => {
               {/* Kolona 1 */}
               <div className="flex flex-col gap-2">
                 <div className="font-semibold text-lg text-primary">Fillers</div>
-                <a href="/products/avalon-fillers" className="text-sm text-primary hover:text-accent">AVALON™ Fillers</a>
-                <a href="/products/mesoheal-body" className="text-sm text-primary hover:text-accent">MESOHEAL® Body Fillers</a>
+                <Link href="/products/avalon-fillers" className="text-sm text-primary hover:text-accent">AVALON™ Fillers</Link>
+                <Link href="/products/mesoheal-body" className="text-sm text-primary hover:text-accent">MESOHEAL® Body Fillers</Link>
               </div>
               {/* Kolona 2 */}
               <div className="flex flex-col gap-2">
                 <div className="font-semibold text-lg text-primary">Skinboosters</div>
-                <a href="/products/mesoheal-phlo" className="text-sm text-primary hover:text-accent">MESOHEAL® Phlo</a>
-                <a href="/products/glow-series" className="text-sm text-primary hover:text-accent">MESOHEAL® Glow Series</a>
-                <a href="/products/mesoheal-bio" className="text-sm text-primary hover:text-accent">MESOHEAL® Bio</a>
-                <a href="/products/mesoheal-plus" className="text-sm text-primary hover:text-accent">MESOHEAL®+</a>
+                <Link href="/products/mesoheal-phlo" className="text-sm text-primary hover:text-accent">MESOHEAL® Phlo</Link>
+                <Link href="/products/glow-series" className="text-sm text-primary hover:text-accent">MESOHEAL® Glow Series</Link>
+                <Link href="/products/mesoheal-bio" className="text-sm text-primary hover:text-accent">MESOHEAL® Bio</Link>
+                <Link href="/products/mesoheal-plus" className="text-sm text-primary hover:text-accent">MESOHEAL®+</Link>
               </div>
               {/* Kolona 3 */}
               <div className="flex flex-col gap-2">
                 <div className="font-semibold text-lg text-primary">Biostimulators</div>
-                <a href="/products/reversal-dual" className="text-sm text-primary hover:text-accent">REVERSAL Dual</a>
-                <a href="/products/reversal-neo" className="text-sm text-primary hover:text-accent">REVERSAL Neo</a>
+                <Link href="/products/reversal-dual" className="text-sm text-primary hover:text-accent">REVERSAL Dual</Link>
+                <Link href="/products/reversal-neo" className="text-sm text-primary hover:text-accent">REVERSAL Neo</Link>
               </div>
               {/* Kolona 4 */}
               <div className="flex flex-col gap-2">
                 <div className="font-semibold text-lg text-primary">Professional Skincare</div>
-                <a href="/products/mesoheal-post" className="text-sm text-primary hover:text-accent">MESOHEAL® Post-Treatment</a>
-                <a href="/products/avalon-beta" className="text-sm text-primary hover:text-accent">AVALON™ Beta-Glucan</a>
-                <a href="/products/crystal-carboxy" className="text-sm text-primary hover:text-accent">Crystal Carboxy</a>
-                <a href="/products/glomedic" className="text-sm text-primary hover:text-accent">Glomedic</a>
+                <Link href="/products/mesoheal-post" className="text-sm text-primary hover:text-accent">MESOHEAL® Post-Treatment</Link>
+                <Link href="/products/avalon-beta" className="text-sm text-primary hover:text-accent">AVALON™ Beta-Glucan</Link>
+                <Link href="/products/crystal-carboxy" className="text-sm text-primary hover:text-accent">Crystal Carboxy</Link>
+                <Link href="/products/glomedic" className="text-sm text-primary hover:text-accent">Glomedic</Link>
               </div>
             </div>
           )}
         </div>
 
         {/* Ostale stavke */}
-        <a className="text-black text-[16px] font-medium hover:text-accent" href="/usluge">Usluge</a>
-        <a className="text-black text-[16px] font-medium hover:text-accent" href="/shop">Shop</a>
-        <a className="text-black text-[16px] font-medium hover:text-accent" href="/blog">Blog</a>
-        <a className="text-black text-[16px] font-medium hover:text-accent" href="/onama">O nama</a>
+        <Link className="text-black text-[16px] font-medium hover:text-accent" href="/usluge">Usluge</Link>
+        <Link className="text-black text-[16px] font-medium hover:text-accent" href="/shop">Shop</Link>
+        <Link className="text-black text-[16px] font-medium hover:text-accent" href="/blog">Blog</Link>
+        <Link className="text-black text-[16px] font-medium hover:text-accent" href="/onama">O nama</Link>
 
-        <a
+        <Link
           href="/book"
           className="inline-flex items-center justify-center gap-2 text-sm font-medium bg-[#00ADEE] text-white py-2 px-4 rounded-full hover:bg-[#007BB5]"
         >
           Zakaži termin
-        </a>
+        </Link>
       </nav>
 
       {/* Mobile Hamburger */}
@@ -110,7 +111,7 @@ const Header: React.FC = () => {
         {/* Mobile menu panel */}
         {mobileMenuOpen && (
           <div className="absolute top-full right-0 w-64 mt-2 bg-white/70 backdrop-blur-xl rounded-lg p-4 shadow-lg z-50 flex flex-col gap-3">
-            <a href="/" className="text-black text-[16px] font-medium hover:text-accent">Početna</a>
+            <Link href="/" className="text-black text-[16px] font-medium hover:text-accent">Početna</Link>
 
             {/* Mobile dropdown */}
             <div>
@@ -133,32 +134,32 @@ const Header: React.FC = () => {
 
               {mobileDropdownOpen && (
                 <div className="flex flex-col gap-2 mt-2 pl-4">
-                  <a href="/products/avalon-fillers" className="text-sm text-primary hover:text-accent">AVALON™ Fillers</a>
-                  <a href="/products/mesoheal-body" className="text-sm text-primary hover:text-accent">MESOHEAL® Body Fillers</a>
-                  <a href="/products/mesoheal-phlo" className="text-sm text-primary hover:text-accent">MESOHEAL® Phlo</a>
-                  <a href="/products/glow-series" className="text-sm text-primary hover:text-accent">MESOHEAL® Glow Series</a>
-                  <a href="/products/mesoheal-bio" className="text-sm text-primary hover:text-accent">MESOHEAL® Bio</a>
-                  <a href="/products/mesoheal-plus" className="text-sm text-primary hover:text-accent">MESOHEAL®+</a>
-                  <a href="/products/reversal-dual" className="text-sm text-primary hover:text-accent">REVERSAL Dual</a>
-                  <a href="/products/reversal-neo" className="text-sm text-primary hover:text-accent">REVERSAL Neo</a>
-                  <a href="/products/mesoheal-post" className="text-sm text-primary hover:text-accent">MESOHEAL® Post-Treatment</a>
-                  <a href="/products/avalon-beta" className="text-sm text-primary hover:text-accent">AVALON™ Beta-Glucan</a>
-                  <a href="/products/crystal-carboxy" className="text-sm text-primary hover:text-accent">Crystal Carboxy</a>
-                  <a href="/products/glomedic" className="text-sm text-primary hover:text-accent">Glomedic</a>
+                  <Link href="/products/avalon-fillers" className="text-sm text-primary hover:text-accent">AVALON™ Fillers</Link>
+                  <Link href="/products/mesoheal-body" className="text-sm text-primary hover:text-accent">MESOHEAL® Body Fillers</Link>
+                  <Link href="/products/mesoheal-phlo" className="text-sm text-primary hover:text-accent">MESOHEAL® Phlo</Link>
+                  <Link href="/products/glow-series" className="text-sm text-primary hover:text-accent">MESOHEAL® Glow Series</Link>
+                  <Link href="/products/mesoheal-bio" className="text-sm text-primary hover:text-accent">MESOHEAL® Bio</Link>
+                  <Link href="/products/mesoheal-plus" className="text-sm text-primary hover:text-accent">MESOHEAL®+</Link>
+                  <Link href="/products/reversal-dual" className="text-sm text-primary hover:text-accent">REVERSAL Dual</Link>
+                  <Link href="/products/reversal-neo" className="text-sm text-primary hover:text-accent">REVERSAL Neo</Link>
+                  <Link href="/products/mesoheal-post" className="text-sm text-primary hover:text-accent">MESOHEAL® Post-Treatment</Link>
+                  <Link href="/products/avalon-beta" className="text-sm text-primary hover:text-accent">AVALON™ Beta-Glucan</Link>
+                  <Link href="/products/crystal-carboxy" className="text-sm text-primary hover:text-accent">Crystal Carboxy</Link>
+                  <Link href="/products/glomedic" className="text-sm text-primary hover:text-accent">Glomedic</Link>
                 </div>
               )}
             </div>
 
-            <a href="/services" className="text-black text-[16px] font-medium hover:text-accent">Usluge</a>
-            <a href="/shop" className="text-black text-[16px] font-medium hover:text-accent">Shop</a>
-            <a href="/blog" className="text-black text-[16px] font-medium hover:text-accent">Blog</a>
-            <a href="/about-us" className="text-black text-[16px] font-medium hover:text-accent">O nama</a>
-            <a
+            <Link href="/services" className="text-black text-[16px] font-medium hover:text-accent">Usluge</Link>
+            <Link href="/shop" className="text-black text-[16px] font-medium hover:text-accent">Shop</Link>
+            <Link href="/blog" className="text-black text-[16px] font-medium hover:text-accent">Blog</Link>
+            <Link href="/about-us" className="text-black text-[16px] font-medium hover:text-accent">O nama</Link>
+            <Link
               href="/book"
               className="inline-flex items-center justify-center gap-2 text-sm font-medium bg-[#00ADEE] text-white py-2 px-4 rounded-full hover:bg-[#007BB5]"
             >
               Zakaži termin
-            </a>
+            </Link>
           </div>
         )}
       </div>
