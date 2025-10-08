@@ -8,6 +8,7 @@ import Video from "./components/video";
 import Contact from "./components/contact";
 import Portfolio from "./components/treatments";
 import Footer from "./components/Footer";
+import References from "./components/review";
 
 export default function Home() {
   return (
@@ -15,8 +16,11 @@ export default function Home() {
       <Header />
       <Hero />
       <StatsSection />
-      <Video src="/video/7581715-uhd_4096_2160_25fps.mp4" poster="/images/postervideo.png" className="h-96 my-16" />
+      {/* <Video src="/video/7581715-uhd_4096_2160_25fps.mp4" poster="/images/postervideo.png" className="h-96 my-16" /> */}
       <Portfolio />
+      <Portfolio />
+      <Portfolio />
+      <References />
       <USPSection />
       <Contact />
       <Blog />
